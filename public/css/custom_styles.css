@@ -1,0 +1,205 @@
+.tile-container {
+    padding: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10vw;
+    row-gap: 10vh;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.tile {
+    /* background-image: url('https://images.pexels.com/photos/1368382/pexels-photo-1368382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    min-height: 50vh;
+    min-width: 33%;
+    justify-content: space-between;
+}
+
+.tile-title {
+    width: 100%;
+    flex: 0.5;
+    align-self: flex-start;
+    display: flex;
+}
+
+.tile-description {
+    width: 100%;
+    flex: 0;
+    align-self: flex-end;
+    visibility: hidden;
+    transition-duration: 2s;
+}
+
+.tile:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+div.tile-title h4 {
+    transition-duration: 2s;
+}
+
+.tile:hover>div.tile-title h4 {
+    font-size: 300%;
+}
+
+.tile:hover>div.tile-description {
+    flex: 0.5;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.tile-description p {
+    visibility: hidden;
+    color: rgba(255, 255, 255, 0);
+    transition-duration: 2s;
+}
+
+.tile:hover>div.tile-description p {
+    visibility: visible;
+    color: rgba(255, 255, 255, 1);
+    font-size: 200%;
+    transition-duration: 2s;
+}
+
+div h4 {
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+div p {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr 1fr;
+    z-index: 2;
+    top: 0;
+    width: 100vw;
+    min-height: 10vh;
+    position: fixed;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.menu-font {
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+div.nav {
+    min-height: 10vh;
+}
+
+section {
+    background-color: #f5f5f5;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    min-height: inherit;
+}
+
+#footer-section {
+    display: grid;
+    justify-items: center;
+    background-color: #bcf0eb;
+    min-height: 20vh;
+    align-items: center;
+}
+
+/* Dropdown Button */
+
+.dropbtn {
+    /* color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: black;
+}
+
+li {
+    display: inline;
+    margin-left: 2vw;
+}
+
+.menu-links {
+    justify-self: center;
+}
+
+a {
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-decoration: none; 
+    
+}
+
+.content{
+    min-height: 90vh;
+}

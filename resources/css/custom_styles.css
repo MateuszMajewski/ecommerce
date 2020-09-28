@@ -1,0 +1,16 @@
+.tile-container {
+    display: grid;
+    width: 80vw;
+}
+
+.tile {
+    height: 30%;
+    height: 100px;
+    background-color: aqua;
+    opacity: 0.5;
+    text-align: center;
+}
+
+#test {
+    color: blue;
+}
